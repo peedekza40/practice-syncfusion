@@ -1,0 +1,13 @@
+<ejs-richtexteditor 
+    id='defaultRTE' #customRte
+    [editorMode]="mode"
+    [insertImageSettings]="insertImageSettings"
+    [pasteCleanupSettings]="pasteCleanupSettings"
+    [placeholder]="placeholder"
+    (actionBegin)="actionBegin($event)"
+    (beforePasteCleanup)="onBeforePasteCleanup($event)"
+    (afterPasteCleanup)="onAfterPasteCleanup($event)">
+    <!-- <ng-template #valueTemplate>
+        <h3>Please input.</h3>
+    </ng-template> -->
+</ejs-richtexteditor>
